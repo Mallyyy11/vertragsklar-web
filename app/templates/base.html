@@ -4,19 +4,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vertragsklar</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+      font-family: "Instrument Serif", serif;
+      background-color: transparent;
+    }
+  
+    main {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 2rem;
+      margin-top: 1rem;
+    }
+  
+    button {
+      transition: all 0.2s ease-in-out;
+    }
+    button:hover {
+      transform: translateY(-1px);
+    }
+  
+    textarea, input[type="file"] {
+      border-color: #ddd;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 
-<body class="bg-slate-50 text-slate-900">
-  <!-- Header ausgeblendet für Squarespace-Einbettung -->
-
+<body class="bg-transparent text-slate-900">
   <main class="max-w-3xl mx-auto px-6 py-2">
     {% block content %}{% endblock %}
   </main>
-
-  <footer class="max-w-3xl mx-auto px-6 py-10 text-sm text-slate-500">
-    <hr class="mb-4 border-slate-200" />
-    © 2025 Vertragsklar – KI-Verständnis für deine Verträge.
-  </footer>
 </body>
 </html>
+

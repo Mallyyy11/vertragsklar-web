@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="grid md:grid-cols-2 gap-8">
+<div class="grid md:grid-cols-2 gap-10">
 
-  <section class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+
+  <section class="bg-white rounded-2xl p-8 shadow-md border border-slate-200">
     <h2 class="font-semibold text-lg mb-3">✍️ Vertrag als Text einfügen</h2>
     <form method="post" action="/analyze-text">
-      <textarea name="contract_text" rows="12" class="w-full p-3 border rounded-lg focus:outline-none focus:ring" placeholder="Copy & Paste den Vertragstext hier rein..."></textarea>
+      <textarea name="contract_text" rows="18" class="w-full p-4 border rounded-lg text-base leading-relaxed focus:outline-none focus:ring focus:ring-slate-300" placeholder="Copy & Paste den Vertragstext hier rein..."></textarea>
       <button class="mt-3 inline-flex items-center justify-center rounded-lg px-4 py-2 bg-slate-900 text-white hover:bg-slate-800">Vertrag prüfen (Text)</button>
     </form>
   </section>
