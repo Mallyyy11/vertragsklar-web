@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Instrument Serif";
+    src: url("/static/fonts/InstrumentSerif-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: "Instrument Serif", serif !important;
+  }
+  
